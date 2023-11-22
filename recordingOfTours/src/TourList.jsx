@@ -1,4 +1,4 @@
-const BlogList = ({ tours }) => {
+const TourList = ({ tours }) => {
   return (
     <div className="blog-list">
       <h2>All Tours!</h2>
@@ -12,4 +12,4 @@ const BlogList = ({ tours }) => {
   );
 }
  
-export default BlogList;
+export default TourList;
