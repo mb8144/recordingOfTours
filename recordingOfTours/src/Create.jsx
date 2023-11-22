@@ -4,10 +4,15 @@ const Create = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [region, setRegion] = useState('empty');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const tour = {title, body, region};
+    console.log(tour);
+  }
   return ( 
     <div className="create">
       <h2>Add a new Tour</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>Tour title: </label>
           <input 
             type="text"
