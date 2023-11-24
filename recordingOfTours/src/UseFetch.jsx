@@ -22,7 +22,7 @@ const useFetch = (url) => {
       })
       .catch(err => {
         if(err.name === 'AbortError'){
-          /* This line is responsible for the message signal aborted without no reason */
+          /* This line is responsible for the message: signal aborted without no reason */
           console.log('fetch aborted')
         } else {
           setIsPending(false);

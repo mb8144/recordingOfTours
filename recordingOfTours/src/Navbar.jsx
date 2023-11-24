@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>Tour Record</h1>
+      <Link to="/" className='nav-top-left'>Tour Record</Link>
       <div className="links">
-        <Link to="/">My Tours</Link>
+        <Link to="/tours">My Tours</Link>
         <Link to="/create" style={{ 
           color: 'white', 
-          backgroundColor: '#1a18b9',
+          backgroundColor: '#6A18B9',
           borderRadius: '8px' 
         }}>New Tour</Link>
       </div>
