@@ -4,6 +4,7 @@ import Home from './Home';
 import Create from './Create';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TourDetails from './TourDetails';
+import NotFound from './NotFound';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<Create />} />
             <Route path="/tours/:id" element={<TourDetails />} />
+            <Route path="*" element={<NotFound />}/>
           </Routes>
         </div>
       </div>

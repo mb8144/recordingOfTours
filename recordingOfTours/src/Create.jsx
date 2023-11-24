@@ -1,13 +1,27 @@
 import { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Create = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [region, setRegion] = useState('empty');
+  const [isPending, setIsPending] = useState(false);
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    setIsPending(true);
     const tour = {title, body, region};
-    console.log(tour);
+    fetch('http://localhost:8000/tours', {
+      method: 'POST',
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(tour)
+    }).then(() => {
+      setIsPending(false);
+      navigate('/');
+    })
+    
   }
   return ( 
     <div className="create">
@@ -37,7 +51,8 @@ const Create = () => {
           <option value="Zentralschweiz">Zentralschweiz</option>
           <option value="Tessin">Tessin</option>
         </select>
-        <button>Add Tour</button>
+        {!isPending && <button>Add Tour</button>}
+        {isPending && <button disabled>Adding Tour...</button>}
       </form>
     </div>
    );
