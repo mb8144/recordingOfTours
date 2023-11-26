@@ -47,6 +47,20 @@ lighter blue: #1867B9 */
   padding: 20px;
 }
 
+/* Footer */
+
+.footer {
+  text-align: center;
+  max-width: 700px;
+  margin: 40px auto;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  width: 100%;
+}
+
+.footer p {
+  margin: 20px 0;
+}
+
 /* My tours */
 .blog-preview {
   padding: 10px 16px;
