@@ -5,7 +5,7 @@ const Home = () => {
   const { error, isPending, data: tours } = useFetch('http://localhost:8000/tours')
 
   return (
-    <div className="home">
+    <div>
       { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
       { tours && <TourList tours={tours} /> }

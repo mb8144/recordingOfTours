@@ -53,45 +53,45 @@ lighter blue: #1867B9 */
   text-align: center;
   max-width: 700px;
   margin: 40px auto;
-  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  border-top: 2px solid #f2f2f2;
   width: 100%;
 }
 
 .footer p {
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 
 /* My tours */
-.blog-preview {
+.tour-preview {
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
 }
-.blog-preview:hover {
+.tour-preview:hover {
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
   border: 1.5px solid #1a18b9 ;
   border-radius: 0.5rem;
 }
-.blog-preview h2 {
+.tour-preview h2 {
   font-size: 20px;
   color: #1a18b9;
   margin-bottom: 8px;
 }
 
-.blog-preview a{
+.tour-preview a{
   text-decoration: none;
 }
 
-/* blog details page */
-.blog-details h2 {
+/* tour details page */
+.tour-details h2 {
   font-size: 20px;
   color: #1a18b9;
   margin-bottom: 10px;
 }
-.blog-details div {
+.tour-details div {
   margin: 20px 0;
 }
-.blog-details button {
+.tour-details button {
   background: #6A18B9;
   color: #fff;
   border: 0;
@@ -99,7 +99,20 @@ lighter blue: #1867B9 */
   border-radius: 8px;
   cursor: pointer;
 }
-
+.first-line{
+  display: flex;
+  align-items: center;
+}
+ .tour-date{
+  display: flex;
+  color: grey;
+  /* The important is because of this paragraph is nested inside of a class and a ruleset for h2 within this one was created*/
+  font-size: 15px !important;
+  font-style: italic;
+  font-size: smaller;
+  margin-left: auto;
+  text-align: center;
+ }
 /* For Create component */
 .create {
   max-width: 400px;

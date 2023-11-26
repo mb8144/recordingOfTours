@@ -5,6 +5,7 @@ const Create = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [region, setRegion] = useState('empty');
+  const [date, setDate] = useState('');
   const [isPending, setIsPending] = useState(false);
   const navigate = useNavigate();
 
@@ -12,7 +13,7 @@ const Create = () => {
     e.preventDefault();
 
     setIsPending(true);
-    const tour = {title, body, region};
+    const tour = {title, date, body, region};
     fetch('http://localhost:8000/tours', {
       method: 'POST',
       headers: {"Content-Type": "application/json"},
@@ -33,6 +34,12 @@ const Create = () => {
             required
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+          />
+        <label>Date: </label>
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
           />
         <label>Your Description (still body): </label>
           <textarea
