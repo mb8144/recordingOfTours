@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import useFetch from "./useFetch";
+import useFetch from "../../Components/UseFetch";
 import { Navigate, useNavigate } from "react-router-dom";
 
 const TourDetails = () => {
