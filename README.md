@@ -1,1 +1,1 @@
-# recordingOfTours
+# recording-of-tours
