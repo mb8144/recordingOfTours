@@ -24,6 +24,7 @@ lighter blue: #1867B9 */
   font-size: 25px;
   font-weight: 600;
   margin-left: 0 !important;
+  color: black;
 
 }
 .nav-top-left:hover{
@@ -67,21 +68,22 @@ lighter blue: #1867B9 */
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
 }
-.tour-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-  border: 1.5px solid #1a18b9 ;
-  border-radius: 0.5rem;
-}
-.tour-preview h2 {
-  font-size: 20px;
-  color: #1a18b9;
-  margin-bottom: 8px;
-}
 
 .tour-preview a{
   text-decoration: none;
 }
 
+.card-tour-preview a{
+  text-decoration: none !important;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+.card:hover{
+  border: 1px solid #1a18b9;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
 /* tour details page */
 .tour-details h2 {
   font-size: 20px;
