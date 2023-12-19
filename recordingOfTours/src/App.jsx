@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TourDetails from './Pages/Tours/TourDetails';
 import NotFound from './Components/NotFound';
 import Footer from './Components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
